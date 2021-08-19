@@ -15,6 +15,7 @@ gen_headers_exclude_srcs_arm = [
 ]
 
 gen_headers_out_arm = [
+    "linux/mhi.h",
 
 	// Matching generated-y:
 

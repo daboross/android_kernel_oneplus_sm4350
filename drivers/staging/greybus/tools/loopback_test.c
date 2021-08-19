@@ -35,7 +35,7 @@ static struct dict dict[] = {
 	{"ping", 2},
 	{"transfer", 3},
 	{"sink", 4},
-	{NULL,}		/* list termination */
+	{NULL, 0}		/* list termination */
 };
 
 struct loopback_results {
@@ -711,7 +711,7 @@ static void stop_tests(struct loopback_test *t)
 	}
 }
 
-static void handler(int sig) { /* do nothing */  }
+static void handler(int sig) { (void) sig; /* do nothing */  }
 
 static int wait_for_complete(struct loopback_test *t)
 {

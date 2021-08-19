@@ -15,6 +15,7 @@ gen_headers_exclude_srcs_arm64 = [
 ]
 
 gen_headers_out_arm64 = [
+    "linux/mhi.h",
 
 	// Matching generic-y:
 

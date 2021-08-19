@@ -18,14 +18,14 @@ obj-y += coretech/
 endif
 obj-y += fs/
 obj-y += kernel/
-obj-$(CONFIG_TRI_STATE_KEY) += tri_state_key/
+#obj-$(CONFIG_TRI_STATE_KEY) += tri_state_key/
 ifneq ($(CONFIG_ARCH_HOLI), y)
 obj-y += power/
 endif
 obj-y += oneplus_healthinfo/
 obj-y += mm/
 obj-y += opslalib/
-obj-$(CONFIG_SLABTRACE_DEBUG) += slabtrace/
+#obj-$(CONFIG_SLABTRACE_DEBUG) += slabtrace/
 ifeq ($(CONFIG_DETECT_HUNG_TASK), y)
 obj-$(CONFIG_HUNG_TASK_ENHANCE) += hung_task_enhance/
 endif
